@@ -80,7 +80,7 @@ if __name__ == '__main__':
                       )
     parser.set_usage("""Usage: ./PyIntruder.py [options] <base url> <payload list> --data <data>
         (Use '$' as variable in url that will be swapped out with each payload)
-        Example:  PyIntruder.py http://www.example.com/file/$.pdf payloads.txt (--data 'data')
+        Example:  pyfuzzer.py http://www.example.com/file/$.pdf payloads.txt (--data 'data')
             """)
     options, remainder = parser.parse_args()
     save_responses = options.save
